@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="calculator">
+            <div id="result">
+                <input id="output" type="text">
+            </div>
+                <div id="buttons">
+                    <button id="c" class="operator" onclick="clearOutput()">C</button>
+                    <button id="backspace" class="operator" onclick="clearonce()">CE</button>
+                    <button id="%" class="operator" onclick="output('%')">%</button>
+                    <button id="root" class="operator" onclick="sqrt()">√</button>
+                    <button id="/" class="operator" onclick="output('/')">&#247;</button>
+                    <button id="7" class="number" onclick="output(7)">7</button>
+                    <button id="8" class="number" onclick="output(8)">8</button>
+                    <button id="9" class="number" onclick="output(9)">9</button>
+                    <button id="*" class="operator" onclick="output('*')">&times;</button>
+                    <button id="4" class="number" onclick="output(4)">4</button>
+                    <button id="5" class="number" onclick="output(5)">5</button>
+                    <button id="6" class="number" onclick="output(6)">6</button>
+                    <button id="-" class="operator" onclick="output('-')">-</button>
+                    <button id="1" class="number" onclick="output(1)">1</button>
+                    <button id="2" class="number" onclick="output(2)">2</button>
+                    <button id="3" class="number" onclick="output(3)">3</button>
+                    <button id="+" class="operator" onclick="output('+')">+</button>
+                    <button id="space" class="space"></button>
+                    <button id="0" class="number" onclick="output(0)">0</button>
+                    
+                    <button id="=" class="operator" onclick="calc()">=</button>
+                </div>
+        </div>
+        <h1 class="intro">Developed BY : Mirza Faizan Ahmed</h1>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

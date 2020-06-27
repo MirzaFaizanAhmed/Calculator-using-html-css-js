@@ -1,0 +1,140 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: cyan;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#container{
+    width: 1000px;
+    height: 550px;
+    background-image: url('https://cdn4.vectorstock.com/i/1000x1000/12/58/math-pattern-on-black-background-color-symbol-vector-20331258.jpg');
+    margin: 20px auto;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px 2px rgb(46, 44, 44);
+
+}
+
+#calculator{
+    width: 320px;
+    height: 510px;
+    background-color: #273D48;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    top: 10px;
+    border-radius: 8px;
+}
+#result{
+    height: 120px;
+}
+#output{
+    width: 92%;
+    height: 100px;
+    padding: 0 5px;
+    text-align: right;
+    font-size: 35px;
+    background-color: #273D48;
+    border: none;
+    color: #fff;
+}
+#output:focus{
+    outline: none;
+}
+#buttons{
+    height: 400px;
+}
+.operator , .number , .space{
+    width: 46px;
+    height: 46px;
+    margin: 15px 17px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font: 15px;
+}
+#backspace , #c {
+    float: left;
+}
+.operator {
+    float: right;
+}
+.number , .space{
+    background-color: #273D48;
+    color: #fff;
+}
+.number , .operator{
+    cursor: pointer;
+}
+
+.number:focus , .operator:focus{
+    outline: 0;
+}
+.number:active , .operator:active{
+    font-size: 20px;
+}
+button:nth-child(1){
+    background-color: rgb(187, 206, 120);
+    color: #fff;
+}
+button:nth-child(2){
+    background-color: rgb(55, 132, 209);
+    color: #fff;
+}
+button:nth-child(3){
+    background-color: yellowgreen;
+    color: #fff;
+    font-size: 18px;
+}
+button:nth-child(4){
+    background-color: rgba(163, 220, 224, 0.966);
+    color: #fff;
+    font-size: 25px;
+}
+
+button:nth-child(5){
+    background-color: skyblue;
+    color: #fff;
+    font-size: 18px;
+}
+button:nth-child(9){
+    background-color: rgb(31, 170, 117);
+    color: #fff;
+    font-size: 18px;
+}
+button:nth-child(13){
+    background-color: rgb(75, 64, 224);
+    color: #fff;
+    font-size: 18px;
+}
+button:nth-child(17){
+    background-color: rgb(126, 148, 182);
+    color: #fff;
+    font-size: 18px;
+}
+button:nth-child(20){
+    background-color: rgb(183, 230, 73);
+    color: #fff;
+    font-size: 18px;
+}
+@media only screen and (max-width: 600px){
+    #container{
+        height: 100%;
+
+    }
+    #calculator{
+        height: 100%;
+        margin-bottom: 20px;
+    }
+}
+.intro{
+    float: right;
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: grey;
+}
+
+    
