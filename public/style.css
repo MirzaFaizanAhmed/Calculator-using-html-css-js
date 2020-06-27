@@ -26,6 +26,13 @@ body{
     top: 10px;
     border-radius: 8px;
 }
+#calculator h3{
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    color: gray;
+    margin-left: 5px;
+}
 #result{
     height: 120px;
 }
